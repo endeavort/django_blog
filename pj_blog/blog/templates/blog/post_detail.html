@@ -1,9 +1,0 @@
-{% extends "blog/base.html" %}
-{% load l10n tz %}
-{% block main %}
-<h2>{{ object.title }}</h2>
-<p>更新日時：<time>{{ object.updated|localtime|localize }}</time></p>
-<div>
-    {{ object.body }}
-</div>
-{% endblock %}
